@@ -1,24 +1,36 @@
 ﻿@model IEnumerable<GestionTareas.Modelos.Usuario>
 
-<h2>Usuarios Registrados</h2>
+@{
+    ViewData["Title"] = "Usuarios Registrados";
+}
 
-<a asp-action="Create">Registrar nuevo usuario</a>
+<div class="container my-5">
+    <h2 class="mb-4">Usuarios Registrados</h2>
 
-<table border="1">
-    <tr>
-        <th>Nombre</th>
-        <th>Correo</th>
-        <th>Acciones</th>
-    </tr>
-    @foreach (var usuario in Model)
-    {
-        <tr>
-            <td>@usuario.Nombre</td>
-            <td>@usuario.Correo</td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@usuario.Id">Editar</a> |
-                <a asp-action="Delete" asp-route-id="@usuario.Id">Eliminar</a>
-            </td>
-        </tr>
-    }
-</table>
+    <a asp-action="Create" class="btn btn-success mb-3">Registrar nuevo usuario</a>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th style="width: 160px;">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var usuario in Model)
+                {
+                    <tr>
+                        <td>@usuario.Nombre</td>
+                        <td>@usuario.Correo</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@usuario.Id" class="btn btn-primary btn-sm me-1">Editar</a>
+                            <a asp-action="Delete" asp-route-id="@usuario.Id" class="btn btn-danger btn-sm">Eliminar</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

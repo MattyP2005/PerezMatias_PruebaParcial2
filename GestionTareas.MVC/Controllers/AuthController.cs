@@ -4,22 +4,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GestionTareas.MVC.Controllers
 {
-    public class AutorizacionController : Controller
+    public class AuthController : Controller
     {
-        private readonly Crud<UsuarioDTOs> _crudApi;
+        private readonly HttpClient _httpClient;
 
-        public AutorizacionController(Crud<UsuarioDTOs> crudApi)
+        public AuthController(IHttpClientFactory httpClientFactory)
         {
-            _crudApi = crudApi;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
+            _httpClient = httpClientFactory.CreateClient("ApiClient");
         }
 
         [HttpGet]
-        public IActionResult Registro()
+        public IActionResult Login()
         {
             return View();
         }
@@ -30,9 +25,8 @@ namespace GestionTareas.MVC.Controllers
             if (!ModelState.IsValid)
                 return View(dto);
 
-            var respuesta = await _crudApi.PostAsync<RegistrarDTOs, string>("api/autorizaciones/registro", dto);
-
-            if (string.IsNullOrEmpty(respuesta))
+            var response = await _httpClient.PostAsJsonAsync("auth/registro", dto);
+            if (!response.IsSuccessStatusCode)
             {
                 ViewBag.Error = "No se pudo registrar.";
                 return View(dto);
@@ -42,26 +36,20 @@ namespace GestionTareas.MVC.Controllers
             return RedirectToAction("Login");
         }
 
-        [HttpGet]
-        public IActionResult Login()
-        {
-            return View();
-        }
-
         [HttpPost]
         public async Task<IActionResult> Login(LoginDTOs dto)
         {
             if (!ModelState.IsValid)
                 return View(dto);
 
-            var token = await _crudApi.PostAsync<LoginDTOs, string>("api/auth/login", dto);
-
-            if (string.IsNullOrEmpty(token))
+            var response = await _httpClient.PostAsJsonAsync("auth/login", dto);
+            if (!response.IsSuccessStatusCode)
             {
                 ViewBag.Error = "Credenciales incorrectas.";
                 return View(dto);
             }
 
+            var token = await response.Content.ReadAsStringAsync();
             HttpContext.Session.SetString("JWT", token);
             return RedirectToAction("Index", "Home");
         }

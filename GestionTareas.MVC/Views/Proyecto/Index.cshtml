@@ -1,22 +1,39 @@
 ﻿@model IEnumerable<GestionTareas.Modelos.Proyecto>
 
-<h2>Proyectos</h2>
+@{
+    ViewData["Title"] = "Listado de Proyectos";
+}
 
-<table border="1">
-    <tr>
-        <th>Nombre</th>
-        <th>Descripción</th>
-        <th>Fecha de creación</th>
-    </tr>
-    @foreach (var proyecto in Model)
-    {
-        <tr>
-            <td>@proyecto.Nombre</td>
-            <td>@proyecto.Descripcion</td>
-            <td>@proyecto.FechaCreacion.ToShortDateString()</td>
-        </tr>
-    }
-</table>
+<div class="container my-5">
+    <h2 class="mb-4">Listado de Proyectos</h2>
 
-<br />
-<a asp-controller="Home" asp-action="Index">Volver al Inicio</a>
+    <table class="table table-bordered table-striped shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Fecha de creación</th>
+                <th class="text-center">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var proyecto in Model)
+            {
+                <tr>
+                    <td>@proyecto.Nombre</td>
+                    <td>@proyecto.Descripcion</td>
+                    <td>@proyecto.FechaCreacion.ToShortDateString()</td>
+                    <td class="text-center">
+                        <a asp-action="Edit" asp-route-id="@proyecto.Id" class="btn btn-sm btn-warning me-2">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@proyecto.Id" class="btn btn-sm btn-danger">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="mt-4">
+        <a asp-action="Create" class="btn btn-primary">Crear nuevo proyecto</a>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-secondary ms-2">Volver al Inicio</a>
+    </div>
+</div>

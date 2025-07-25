@@ -1,5 +1,5 @@
 ﻿using GestionTareas.API.Consumer;
-using GestionTareas.Modelos.DTOs;  // Asumo que UsuarioDTOs está aquí
+using GestionTareas.Modelos.DTOs;  // UsuarioDTOs
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestionTareas.MVC.Controllers
@@ -19,7 +19,7 @@ namespace GestionTareas.MVC.Controllers
             if (string.IsNullOrEmpty(token))
                 return RedirectToAction("Login", "Auth");
 
-            var usuarios = await _crudApi.GetAllAsync("api/usuarios", token);
+            var usuarios = await _crudApi.GetAllAsync(token);  // Sin URL aquí
             return View(usuarios);
         }
 
@@ -36,9 +36,9 @@ namespace GestionTareas.MVC.Controllers
             if (!ModelState.IsValid || string.IsNullOrEmpty(token))
                 return View(usuario);
 
-            var resultado = await _crudApi.PostAsync("api/usuarios", usuario, token);
+            var resultado = await _crudApi.PostAsync(usuario, token);
 
-            if (!resultado)
+            if (resultado == null || resultado == 0)
             {
                 ViewBag.Error = "Error al crear usuario";
                 return View(usuario);
@@ -54,7 +54,7 @@ namespace GestionTareas.MVC.Controllers
             if (string.IsNullOrEmpty(token))
                 return RedirectToAction("Login", "Auth");
 
-            var usuario = await _crudApi.GetByIdAsync($"api/usuarios/{id}", token);
+            var usuario = await _crudApi.GetByIdAsync(id, token);
             if (usuario == null)
                 return NotFound();
 
@@ -68,7 +68,7 @@ namespace GestionTareas.MVC.Controllers
             if (!ModelState.IsValid || string.IsNullOrEmpty(token))
                 return View(usuario);
 
-            var resultado = await _crudApi.PutAsync($"api/usuarios/{usuario.Id}", usuario, token);
+            var resultado = await _crudApi.PutAsync(usuario.Id, usuario, token);
 
             if (!resultado)
             {
@@ -86,7 +86,7 @@ namespace GestionTareas.MVC.Controllers
             if (string.IsNullOrEmpty(token))
                 return RedirectToAction("Login", "Auth");
 
-            var usuario = await _crudApi.GetByIdAsync($"api/usuarios/{id}", token);
+            var usuario = await _crudApi.GetByIdAsync(id, token);
             if (usuario == null)
                 return NotFound();
 
@@ -100,13 +100,12 @@ namespace GestionTareas.MVC.Controllers
             if (string.IsNullOrEmpty(token))
                 return RedirectToAction("Login", "Auth");
 
-            var resultado = await _crudApi.DeleteAsync($"api/usuarios/{id}", token);
+            var resultado = await _crudApi.DeleteAsync(id, token);
 
             if (!resultado)
             {
                 ViewBag.Error = "Error al eliminar usuario";
-                // Opcional: recarga el Delete view con el usuario
-                var usuario = await _crudApi.GetByIdAsync($"api/usuarios/{id}", token);
+                var usuario = await _crudApi.GetByIdAsync(id, token);
                 return View("Delete", usuario);
             }
 

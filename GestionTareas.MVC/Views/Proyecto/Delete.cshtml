@@ -1,13 +1,25 @@
 ﻿@model GestionTareas.Modelos.Proyecto
 
-<h2>Eliminar Proyecto</h2>
+@{
+    ViewData["Title"] = "Eliminar Proyecto";
+}
 
-<p>¿Estás seguro de que deseas eliminar este proyecto?</p>
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm border-danger">
+                <div class="card-body text-center">
+                    <h2 class="card-title text-danger mb-3">¿Eliminar Proyecto?</h2>
+                    <p class="lead">¿Estás seguro de que deseas eliminar el siguiente proyecto?</p>
+                    <p class="font-weight-bold text-dark">@Model.Nombre</p>
 
-<p><strong>@Model.Nombre</strong></p>
-
-<form asp-action="DeleteConfirmed" method="post">
-    <input type="hidden" asp-for="Id" />
-    <button type="submit">Sí, eliminar</button>
-    <a asp-action="Index">Cancelar</a>
-</form>
+                    <form asp-action="DeleteConfirmed" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+                        <a asp-action="Index" class="btn btn-secondary ml-2">Cancelar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

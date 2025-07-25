@@ -1,34 +1,45 @@
 ﻿@model IEnumerable<GestionTareas.Modelos.Tarea>
 
-<h2>Tareas</h2>
+@{
+    ViewData["Title"] = "Tareas";
+}
 
-<table border="1">
-    <thead>
-        <tr>
-            <th>Título</th>
-            <th>Descripción</th>
-            <th>Estado</th>
-            <th>Prioridad</th>
-            <th>Fecha Vencimiento</th>
-            <th>Proyecto ID</th>
-            <th>Usuario Asignado ID</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var tarea in Model)
-        {
+<div class="container my-5">
+    <h2 class="mb-4">Tareas</h2>
+
+    <table class="table table-striped table-hover table-bordered align-middle">
+        <thead class="table-dark">
             <tr>
-                <td>@tarea.Titulo</td>
-                <td>@tarea.Descripcion</td>
-                <td>@tarea.Estado</td>
-                <td>@tarea.Prioridad</td>
-                <td>@tarea.FechaVencimiento.ToShortDateString()</td>
-                <td>@tarea.ProyectoId</td>
-                <td>@tarea.UsuarioId</td>
+                <th>Título</th>
+                <th>Descripción</th>
+                <th>Estado</th>
+                <th>Prioridad</th>
+                <th>Fecha Vencimiento</th>
+                <th>Proyecto ID</th>
+                <th>Usuario Asignado ID</th>
+                <th>Acciones</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var tarea in Model)
+            {
+                <tr>
+                    <td>@tarea.Titulo</td>
+                    <td>@tarea.Descripcion</td>
+                    <td>@tarea.Estado</td>
+                    <td>@tarea.Prioridad</td>
+                    <td>@tarea.FechaVencimiento.ToShortDateString()</td>
+                    <td>@tarea.ProyectoId</td>
+                    <td>@tarea.UsuarioId</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@tarea.Id" class="btn btn-sm btn-primary me-1">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@tarea.Id" class="btn btn-sm btn-danger">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 
-<br />
-<a asp-controller="Home" asp-action="Index">Volver al Inicio</a>
+    <a asp-action="Create" class="btn btn-success">Crear Nueva Tarea</a>
+    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary ms-2">Volver al Inicio</a>
+</div>

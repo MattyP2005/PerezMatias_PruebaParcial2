@@ -4,16 +4,20 @@
 
 <div class="container my-5">
     <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card shadow-sm rounded">
+        <div class="col-md-8 col-lg-6">
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-header bg-primary text-white text-center rounded-top-4">
+                    <h2 class="mb-0"><i class="bi bi-person-check-fill me-2"></i>Bienvenido</h2>
+                </div>
                 <div class="card-body text-center">
-                    <h2 class="card-title mb-4">Bienvenido</h2>
                     <p class="lead">Has iniciado sesión correctamente.</p>
 
-                    <h5 class="mt-4">Tu token es:</h5>
-                    <pre class="bg-light p-3 rounded text-break" style="user-select: all;">@ViewBag.Token</pre>
+                    <h5 class="mt-4"><i class="bi bi-key-fill me-2"></i>Tu token es:</h5>
+                    <pre class="bg-light p-3 rounded text-break border user-select-all">@ViewBag.Token</pre>
 
-                    <a asp-controller="Auth" asp-action="Logout" class="btn btn-danger mt-4">Cerrar sesión</a>
+                    <a asp-controller="Auth" asp-action="Logout" class="btn btn-outline-danger mt-4">
+                        <i class="bi bi-box-arrow-right me-1"></i> Cerrar sesión
+                    </a>
                 </div>
             </div>
         </div>

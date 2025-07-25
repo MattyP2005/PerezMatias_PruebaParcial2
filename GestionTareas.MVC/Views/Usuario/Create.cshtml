@@ -1,12 +1,46 @@
 ﻿@model GestionTareas.Modelos.Usuario
 
-<h2>Crear Usuario</h2>
+@{
+    ViewData["Title"] = "Crear Usuario";
+}
 
-<form asp-action="Create" method="post">
-    <div><label>Nombre</label><input asp-for="Nombre" /></div>
-    <div><label>Correo</label><input asp-for="Correo" type="email" /></div>
-    <div><label>Contraseña</label><input asp-for="PasswordHash" type="password" /></div>
-    <button type="submit">Registrar</button>
-</form>
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm rounded">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Crear Usuario</h2>
 
-<a asp-action="Index">Volver</a>
+                    <form asp-action="Create" method="post" novalidate>
+                        <div class="mb-3">
+                            <label asp-for="Nombre" class="form-label">Nombre</label>
+                            <input asp-for="Nombre" class="form-control" />
+                            <span asp-validation-for="Nombre" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Correo" class="form-label">Correo</label>
+                            <input asp-for="Correo" type="email" class="form-control" />
+                            <span asp-validation-for="Correo" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="PasswordHash" class="form-label">Contraseña</label>
+                            <input asp-for="PasswordHash" type="password" class="form-control" />
+                            <span asp-validation-for="PasswordHash" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                        <a asp-action="Index" class="btn btn-secondary ms-2">Volver</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

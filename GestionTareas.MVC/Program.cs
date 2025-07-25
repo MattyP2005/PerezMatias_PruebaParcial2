@@ -11,9 +11,14 @@ namespace GestionTareas.MVC
 
             var apiUrl = builder.Configuration["ApiUrl"] ?? "https://localhost:7149/";
 
-            builder.Services.AddHttpClient<Crud<UsuarioDTOs>>(client =>
+            builder.Services.AddHttpClient();
+            builder.Services.AddScoped<Crud<UsuarioDTOs>>(sp =>
             {
-                client.BaseAddress = new Uri(apiUrl);
+                var httpClientFactory = sp.GetRequiredService<IHttpClientFactory>();
+                var httpClient = httpClientFactory.CreateClient();
+                var baseUrl = "https://localhost:7149";
+                var endpoint = "autorizaciones";
+                return new Crud<UsuarioDTOs>(httpClient, baseUrl, endpoint);
             });
 
             builder.Services.AddHttpContextAccessor();

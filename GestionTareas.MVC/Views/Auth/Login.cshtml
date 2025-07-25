@@ -1,22 +1,40 @@
 ﻿@model GestionTareas.Modelos.DTOs.LoginDTOs
 
-<h2>Iniciar Sesión</h2>
-
-<form asp-action="Login" method="post">
-    <div>
-        <label>Correo</label>
-        <input asp-for="Correo" type="email" />
-    </div>
-    <div>
-        <label>Contraseña</label>
-        <input asp-for="Password" type="password" />
-    </div>
-    <button type="submit">Entrar</button>
-</form>
-
-<a asp-action="Registro">¿No tienes cuenta? Regístrate</a>
-
-@if (ViewBag.Error != null)
-{
-    <div style="color:red">@ViewBag.Error</div>
+@{
+    ViewData["Title"] = "Iniciar Sesión";
 }
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card shadow-lg p-4" style="width: 100%; max-width: 400px;">
+        <h2 class="text-center mb-4 text-primary">Iniciar Sesión</h2>
+
+        <form asp-action="Login" method="post">
+            <div class="mb-3">
+                <label asp-for="Correo" class="form-label">Correo Electrónico</label>
+                <input asp-for="Correo" class="form-control" type="email" placeholder="ejemplo@correo.com" />
+                <span asp-validation-for="Correo" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label">Contraseña</label>
+                <input asp-for="Password" class="form-control" type="password" placeholder="********" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </div>
+        </form>
+
+        <div class="text-center">
+            <a asp-action="Registro">¿No tienes cuenta? <strong>Regístrate</strong></a>
+        </div>
+
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger mt-3 text-center" role="alert">
+                @ViewBag.Error
+            </div>
+        }
+    </div>
+</div>

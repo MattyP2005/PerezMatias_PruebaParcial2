@@ -1,11 +1,24 @@
 ﻿@model GestionTareas.Modelos.Tarea
 
-<h2>Eliminar Tarea</h2>
+@{
+    ViewData["Title"] = "Eliminar Tarea";
+}
 
-<p>¿Seguro que deseas eliminar la tarea <strong>@Model.Titulo</strong>?</p>
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card border-danger shadow-sm">
+                <div class="card-body text-center">
+                    <h2 class="card-title text-danger mb-3">Eliminar Tarea</h2>
+                    <p class="lead">¿Seguro que deseas eliminar la tarea <strong>@Model.Titulo</strong>?</p>
 
-<form asp-action="DeleteConfirmed" method="post">
-    <input type="hidden" asp-for="Id" />
-    <button type="submit">Sí, eliminar</button>
-    <a asp-action="Index">Cancelar</a>
-</form>
+                    <form asp-action="DeleteConfirmed" method="post">
+                        <input type="hidden" asp-for="Id" />
+                        <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+                        <a asp-action="Index" class="btn btn-secondary ms-2">Cancelar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

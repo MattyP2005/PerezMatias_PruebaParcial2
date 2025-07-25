@@ -1,5 +1,5 @@
 ﻿using GestionTareas.API.Consumer;
-using GestionTareas.Modelos;  // Aquí debería estar la clase Tarea
+using GestionTareas.Modelos;  // Clase Tarea
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestionTareas.MVC.Controllers
@@ -19,7 +19,8 @@ namespace GestionTareas.MVC.Controllers
             if (string.IsNullOrEmpty(token))
                 return RedirectToAction("Login", "Auth");
 
-            var tareas = await _crudApi.GetAllAsync("api/tareas", token);
+            // No pasar "api/tareas" sino solo token (GetAllAsync no usa parámetro de URL)
+            var tareas = await _crudApi.GetAllAsync(token);
             return View(tareas);
         }
 
@@ -36,9 +37,9 @@ namespace GestionTareas.MVC.Controllers
             if (!ModelState.IsValid || string.IsNullOrEmpty(token))
                 return View(tarea);
 
-            var resultado = await _crudApi.PostAsync("api/tareas", tarea, token);
+            var resultado = await _crudApi.PostAsync(tarea, token);
 
-            if (!resultado)
+            if (resultado == null || resultado == 0)  // Si tu PostAsync devuelve int? id
             {
                 ViewBag.Error = "Error al crear la tarea";
                 return View(tarea);
@@ -54,7 +55,7 @@ namespace GestionTareas.MVC.Controllers
             if (string.IsNullOrEmpty(token))
                 return RedirectToAction("Login", "Auth");
 
-            var tarea = await _crudApi.GetByIdAsync($"api/tareas/{id}", token);
+            var tarea = await _crudApi.GetByIdAsync(id, token);
             if (tarea == null)
                 return NotFound();
 
@@ -68,7 +69,7 @@ namespace GestionTareas.MVC.Controllers
             if (!ModelState.IsValid || string.IsNullOrEmpty(token))
                 return View(tarea);
 
-            var resultado = await _crudApi.PutAsync($"api/tareas/{tarea.Id}", tarea, token);
+            var resultado = await _crudApi.PutAsync(tarea.Id, tarea, token);
 
             if (!resultado)
             {
@@ -86,7 +87,7 @@ namespace GestionTareas.MVC.Controllers
             if (string.IsNullOrEmpty(token))
                 return RedirectToAction("Login", "Auth");
 
-            var tarea = await _crudApi.GetByIdAsync($"api/tareas/{id}", token);
+            var tarea = await _crudApi.GetByIdAsync(id, token);
             if (tarea == null)
                 return NotFound();
 
@@ -100,12 +101,12 @@ namespace GestionTareas.MVC.Controllers
             if (string.IsNullOrEmpty(token))
                 return RedirectToAction("Login", "Auth");
 
-            var resultado = await _crudApi.DeleteAsync($"api/tareas/{id}", token);
+            var resultado = await _crudApi.DeleteAsync(id, token);
 
             if (!resultado)
             {
                 ViewBag.Error = "Error al eliminar la tarea";
-                var tarea = await _crudApi.GetByIdAsync($"api/tareas/{id}", token);
+                var tarea = await _crudApi.GetByIdAsync(id, token);
                 return View("Delete", tarea);
             }
 

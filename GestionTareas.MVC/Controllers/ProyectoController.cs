@@ -1,5 +1,5 @@
 ﻿using GestionTareas.API.Consumer;
-using GestionTareas.Modelos; // Asegúrate que Proyecto está aquí
+using GestionTareas.Modelos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GestionTareas.MVC.Controllers
@@ -19,7 +19,7 @@ namespace GestionTareas.MVC.Controllers
             if (string.IsNullOrEmpty(token))
                 return RedirectToAction("Login", "Auth");
 
-            var proyectos = await _crudApi.GetAllAsync("api/proyectos", token);
+            var proyectos = await _crudApi.GetAllAsync(token);
             return View(proyectos);
         }
 
@@ -36,9 +36,9 @@ namespace GestionTareas.MVC.Controllers
             if (!ModelState.IsValid || string.IsNullOrEmpty(token))
                 return View(proyecto);
 
-            var resultado = await _crudApi.PostAsync("api/proyectos", proyecto, token);
+            var resultado = await _crudApi.PostAsync(proyecto, token);
 
-            if (!resultado)
+            if (resultado == null)
             {
                 ViewBag.Error = "Error al crear el proyecto";
                 return View(proyecto);
@@ -54,7 +54,7 @@ namespace GestionTareas.MVC.Controllers
             if (string.IsNullOrEmpty(token))
                 return RedirectToAction("Login", "Auth");
 
-            var proyecto = await _crudApi.GetByIdAsync($"api/proyectos/{id}", token);
+            var proyecto = await _crudApi.GetByIdAsync(id, token);
             if (proyecto == null)
                 return NotFound();
 
@@ -68,7 +68,7 @@ namespace GestionTareas.MVC.Controllers
             if (!ModelState.IsValid || string.IsNullOrEmpty(token))
                 return View(proyecto);
 
-            var resultado = await _crudApi.PutAsync($"api/proyectos/{proyecto.Id}", proyecto, token);
+            var resultado = await _crudApi.PutAsync(proyecto.Id, proyecto, token);
 
             if (!resultado)
             {
@@ -86,7 +86,7 @@ namespace GestionTareas.MVC.Controllers
             if (string.IsNullOrEmpty(token))
                 return RedirectToAction("Login", "Auth");
 
-            var proyecto = await _crudApi.GetByIdAsync($"api/proyectos/{id}", token);
+            var proyecto = await _crudApi.GetByIdAsync(id, token);
             if (proyecto == null)
                 return NotFound();
 
@@ -100,12 +100,12 @@ namespace GestionTareas.MVC.Controllers
             if (string.IsNullOrEmpty(token))
                 return RedirectToAction("Login", "Auth");
 
-            var resultado = await _crudApi.DeleteAsync($"api/proyectos/{id}", token);
+            var resultado = await _crudApi.DeleteAsync(id, token);
 
             if (!resultado)
             {
                 ViewBag.Error = "Error al eliminar el proyecto";
-                var proyecto = await _crudApi.GetByIdAsync($"api/proyectos/{id}", token);
+                var proyecto = await _crudApi.GetByIdAsync(id, token);
                 return View("Delete", proyecto);
             }
 

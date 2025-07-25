@@ -1,30 +1,61 @@
 ﻿@model GestionTareas.Modelos.DTOs.RegistrarDTOs
 
-<h2>Registro</h2>
+@{
+    ViewData["Title"] = "Registro";
+}
 
-<form asp-action="Registro" method="post">
-    <div>
-        <label>Nombre</label>
-        <input asp-for="Nombre" />
-    </div>
-    <div>
-        <label>Correo</label>
-        <input asp-for="Correo" type="email" />
-    </div>
-    <div>
-        <label>Contraseña</label>
-        <input asp-for="Password" type="password" />
-    </div>
-    <div>
-        <label>Rol</label>
-        <input asp-for="Rol" />
-    </div>
-    <button type="submit">Registrarse</button>
-</form>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4>Registro de Usuario</h4>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Registro" method="post">
+                        <div class="mb-3">
+                            <label asp-for="Nombre" class="form-label">Nombre</label>
+                            <input asp-for="Nombre" class="form-control" />
+                            <span asp-validation-for="Nombre" class="text-danger"></span>
+                        </div>
 
-<a asp-action="Login">¿Ya tienes cuenta? Inicia sesión</a>
+                        <div class="mb-3">
+                            <label asp-for="Correo" class="form-label">Correo</label>
+                            <input asp-for="Correo" class="form-control" type="email" />
+                            <span asp-validation-for="Correo" class="text-danger"></span>
+                        </div>
 
-@if (ViewBag.Error != null)
-{
-    <div style="color:red">@ViewBag.Error</div>
+                        <div class="mb-3">
+                            <label asp-for="Password" class="form-label">Contraseña</label>
+                            <input asp-for="Password" class="form-control" type="password" />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Rol" class="form-label">Rol</label>
+                            <input asp-for="Rol" class="form-control" />
+                            <span asp-validation-for="Rol" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">Registrarse</button>
+                    </form>
+
+                    <div class="text-center mt-3">
+                        <a asp-action="Login">¿Ya tienes cuenta? Inicia sesión</a>
+                    </div>
+
+                    @if (ViewBag.Error != null)
+                    {
+                        <div class="alert alert-danger mt-3" role="alert">
+                            @ViewBag.Error
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
 }

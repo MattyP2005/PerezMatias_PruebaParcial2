@@ -3,10 +3,13 @@
   "WorkspaceRootPath": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.Modelos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A597F6A5-EA2E-47DC-A8B7-40D3312B9325}|..\\GestionTareas.API.Consumer\\GestionTareas.API.Consumer.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api.consumer\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\controllers\\autorizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7C732B2-547F-4B97-8B2C-0CB073682129}|..\\GestionTareas.API.Consumer\\GestionTareas.API.Consumer.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api.consumer\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\controllers\\proyectocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -18,7 +21,13 @@
       "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\views\\auth\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,88 +37,127 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Program.cs",
-              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Program.cs",
-              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Program.cs",
-              "RelativeToolTip": "..\\GestionTareas.MVC\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T19:49:59.222Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "..\\GestionTareas.MVC\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAkwHMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T19:37:33.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Crud.cs",
-              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API.Consumer\\Crud.cs",
-              "RelativeDocumentMoniker": "..\\GestionTareas.API.Consumer\\Crud.cs",
-              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API.Consumer\\Crud.cs",
-              "RelativeToolTip": "..\\GestionTareas.API.Consumer\\Crud.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T19:28:36.63Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Program.cs",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Program.cs",
+              "RelativeToolTip": "..\\GestionTareas.MVC\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T20:46:51.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "..\\GestionTareas.MVC\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T20:44:31.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "TareaController.cs",
               "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\TareaController.cs",
               "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Controllers\\TareaController.cs",
               "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\TareaController.cs",
               "RelativeToolTip": "..\\GestionTareas.MVC\\Controllers\\TareaController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAkwHIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAA5wHMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T18:46:41.571Z",
+              "WhenOpened": "2025-07-25T20:43:55.164Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProyectoController.cs",
               "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\ProyectoController.cs",
               "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Controllers\\ProyectoController.cs",
               "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\ProyectoController.cs",
               "RelativeToolTip": "..\\GestionTareas.MVC\\Controllers\\ProyectoController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAkwHIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T18:44:24.277Z",
+              "WhenOpened": "2025-07-25T20:38:32.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AutorizacionController.cs",
-              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\AutorizacionController.cs",
-              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Controllers\\AutorizacionController.cs",
-              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\AutorizacionController.cs",
-              "RelativeToolTip": "..\\GestionTareas.MVC\\Controllers\\AutorizacionController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAgwBwAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "..\\GestionTareas.MVC\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T18:33:12.727Z",
+              "WhenOpened": "2025-07-25T20:37:53.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Crud.cs",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API.Consumer\\Crud.cs",
+              "RelativeDocumentMoniker": "..\\GestionTareas.API.Consumer\\Crud.cs",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API.Consumer\\Crud.cs",
+              "RelativeToolTip": "..\\GestionTareas.API.Consumer\\Crud.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T20:12:34.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Registro.cshtml",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Views\\Auth\\Registro.cshtml",
+              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Views\\Auth\\Registro.cshtml",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Views\\Auth\\Registro.cshtml",
+              "RelativeToolTip": "..\\GestionTareas.MVC\\Views\\Auth\\Registro.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T20:30:03.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "..\\GestionTareas.MVC\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwCcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T20:29:44.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\GestionTareas.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwEoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-25T20:24:50.458Z",
               "EditorCaption": ""
             }
           ]

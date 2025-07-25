@@ -1,22 +1,42 @@
 ﻿@model GestionTareas.Modelos.Proyecto
 
-<h2>Editar Proyecto</h2>
+@{
+    ViewData["Title"] = "Editar Proyecto";
+}
 
-<form asp-action="Edit" method="post">
-    <input type="hidden" asp-for="Id" />
-    <div>
-        <label>Nombre</label>
-        <input asp-for="Nombre" />
-    </div>
-    <div>
-        <label>Descripción</label>
-        <textarea asp-for="Descripcion"></textarea>
-    </div>
-    <div>
-        <label>Fecha de Creación</label>
-        <input asp-for="FechaCreacion" type="date" />
-    </div>
-    <button type="submit">Guardar cambios</button>
-</form>
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title mb-4">Editar Proyecto</h2>
 
-<a asp-action="Index">Volver</a>
+                    <form asp-action="Edit" method="post">
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Nombre" class="form-label">Nombre</label>
+                            <input asp-for="Nombre" class="form-control" />
+                            <span asp-validation-for="Nombre" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Descripcion" class="form-label">Descripción</label>
+                            <textarea asp-for="Descripcion" class="form-control" rows="4"></textarea>
+                            <span asp-validation-for="Descripcion" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="FechaCreacion" class="form-label">Fecha de Creación</label>
+                            <input asp-for="FechaCreacion" type="date" class="form-control" />
+                            <span asp-validation-for="FechaCreacion" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                        <a asp-action="Index" class="btn btn-secondary ms-2">Volver</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
