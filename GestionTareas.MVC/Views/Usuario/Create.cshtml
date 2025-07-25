@@ -1,0 +1,12 @@
+﻿@model GestionTareas.Modelos.Usuario
+
+<h2>Crear Usuario</h2>
+
+<form asp-action="Create" method="post">
+    <div><label>Nombre</label><input asp-for="Nombre" /></div>
+    <div><label>Correo</label><input asp-for="Correo" type="email" /></div>
+    <div><label>Contraseña</label><input asp-for="PasswordHash" type="password" /></div>
+    <button type="submit">Registrar</button>
+</form>
+
+<a asp-action="Index">Volver</a>

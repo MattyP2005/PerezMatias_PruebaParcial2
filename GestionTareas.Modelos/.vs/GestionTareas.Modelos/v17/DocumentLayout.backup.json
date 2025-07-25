@@ -3,10 +3,22 @@
   "WorkspaceRootPath": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.Modelos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{787643BD-A476-48B7-8AD5-8A680BA7082A}|..\\GestionTareas.API\\GestionTareas.API.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A597F6A5-EA2E-47DC-A8B7-40D3312B9325}|..\\GestionTareas.API.Consumer\\GestionTareas.API.Consumer.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api.consumer\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{787643BD-A476-48B7-8AD5-8A680BA7082A}|..\\GestionTareas.API\\GestionTareas.API.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\controllers\\autorizacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\controllers\\proyectocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\controllers\\tareacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{937BA70F-261D-4C05-AD60-BB5A4F82E315}|..\\GestionTareas.MVC\\GestionTareas.MVC.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,36 +28,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Program.cs",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Program.cs",
+              "RelativeToolTip": "..\\GestionTareas.MVC\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T19:49:59.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "..\\GestionTareas.MVC\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAkwHMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T19:37:33.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Crud.cs",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API.Consumer\\Crud.cs",
+              "RelativeDocumentMoniker": "..\\GestionTareas.API.Consumer\\Crud.cs",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API.Consumer\\Crud.cs",
+              "RelativeToolTip": "..\\GestionTareas.API.Consumer\\Crud.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T19:28:36.63Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\GestionTareas.API\\appsettings.json",
-              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\appsettings.json",
-              "RelativeToolTip": "..\\GestionTareas.API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-25T15:44:22.076Z",
+              "DocumentIndex": 3,
+              "Title": "TareaController.cs",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\TareaController.cs",
+              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Controllers\\TareaController.cs",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\TareaController.cs",
+              "RelativeToolTip": "..\\GestionTareas.MVC\\Controllers\\TareaController.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAkwHIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T18:46:41.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProyectoController.cs",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\ProyectoController.cs",
+              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Controllers\\ProyectoController.cs",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\ProyectoController.cs",
+              "RelativeToolTip": "..\\GestionTareas.MVC\\Controllers\\ProyectoController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAkwHIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T18:44:24.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Program.cs",
-              "RelativeDocumentMoniker": "..\\GestionTareas.API\\Program.cs",
-              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Program.cs",
-              "RelativeToolTip": "..\\GestionTareas.API\\Program.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAgwCoAAABbAAAAAAAAAA==",
+              "Title": "AutorizacionController.cs",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\AutorizacionController.cs",
+              "RelativeDocumentMoniker": "..\\GestionTareas.MVC\\Controllers\\AutorizacionController.cs",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.MVC\\Controllers\\AutorizacionController.cs",
+              "RelativeToolTip": "..\\GestionTareas.MVC\\Controllers\\AutorizacionController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwBwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T13:47:11.779Z",
+              "WhenOpened": "2025-07-25T18:33:12.727Z",
               "EditorCaption": ""
             }
           ]

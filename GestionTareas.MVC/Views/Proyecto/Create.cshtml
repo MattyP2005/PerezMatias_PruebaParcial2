@@ -1,0 +1,21 @@
+﻿@model GestionTareas.Modelos.Proyecto
+
+<h2>Crear Proyecto</h2>
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Nombre</label>
+        <input asp-for="Nombre" />
+    </div>
+    <div>
+        <label>Descripción</label>
+        <textarea asp-for="Descripcion"></textarea>
+    </div>
+    <div>
+        <label>Fecha de Creación</label>
+        <input asp-for="FechaCreacion" type="date" />
+    </div>
+    <button type="submit">Guardar</button>
+</form>
+
+<a asp-action="Index">Volver</a>

@@ -1,0 +1,16 @@
+﻿@model GestionTareas.Modelos.Tarea
+
+<h2>Crear Tarea</h2>
+
+<form asp-action="Create" method="post">
+    <div><label>Título</label><input asp-for="Titulo" /></div>
+    <div><label>Descripción</label><textarea asp-for="Descripcion"></textarea></div>
+    <div><label>Estado</label><input asp-for="Estado" /></div>
+    <div><label>Prioridad</label><input asp-for="Prioridad" /></div>
+    <div><label>Fecha de Vencimiento</label><input asp-for="FechaVencimiento" type="date" /></div>
+    <div><label>Proyecto ID</label><input asp-for="ProyectoId" /></div>
+    <div><label>Usuario Asignado ID</label><input asp-for="UsuarioId" /></div>
+    <button type="submit">Guardar</button>
+</form>
+
+<a asp-action="Index">Volver</a>

@@ -1,0 +1,11 @@
+﻿@model GestionTareas.Modelos.Tarea
+
+<h2>Eliminar Tarea</h2>
+
+<p>¿Seguro que deseas eliminar la tarea <strong>@Model.Titulo</strong>?</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Sí, eliminar</button>
+    <a asp-action="Index">Cancelar</a>
+</form>

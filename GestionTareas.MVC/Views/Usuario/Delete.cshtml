@@ -1,0 +1,11 @@
+﻿@model GestionTareas.Modelos.Usuario
+
+<h2>Eliminar Usuario</h2>
+
+<p>¿Estás seguro de eliminar al usuario <strong>@Model.Nombre</strong>?</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Sí, eliminar</button>
+    <a asp-action="Index">Cancelar</a>
+</form>

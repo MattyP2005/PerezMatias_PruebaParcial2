@@ -1,0 +1,30 @@
+﻿@model GestionTareas.Modelos.DTOs.RegistrarDTOs
+
+<h2>Registro</h2>
+
+<form asp-action="Registro" method="post">
+    <div>
+        <label>Nombre</label>
+        <input asp-for="Nombre" />
+    </div>
+    <div>
+        <label>Correo</label>
+        <input asp-for="Correo" type="email" />
+    </div>
+    <div>
+        <label>Contraseña</label>
+        <input asp-for="Password" type="password" />
+    </div>
+    <div>
+        <label>Rol</label>
+        <input asp-for="Rol" />
+    </div>
+    <button type="submit">Registrarse</button>
+</form>
+
+<a asp-action="Login">¿Ya tienes cuenta? Inicia sesión</a>
+
+@if (ViewBag.Error != null)
+{
+    <div style="color:red">@ViewBag.Error</div>
+}

@@ -1,3 +1,6 @@
+using GestionTareas.API.Consumer;
+using GestionTareas.Modelos.DTOs;
+
 namespace GestionTareas.MVC
 {
     public class Program
@@ -6,22 +9,30 @@ namespace GestionTareas.MVC
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            var apiUrl = builder.Configuration["ApiUrl"] ?? "https://localhost:7149/";
+
+            builder.Services.AddHttpClient<Crud<UsuarioDTOs>>(client =>
+            {
+                client.BaseAddress = new Uri(apiUrl);
+            });
+
+            builder.Services.AddHttpContextAccessor();
+            builder.Services.AddSession();
+
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseSession();
             app.UseRouting();
 
             app.UseAuthorization();

@@ -1,0 +1,13 @@
+﻿@model GestionTareas.Modelos.Usuario
+
+<h2>Editar Usuario</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div><label>Nombre</label><input asp-for="Nombre" /></div>
+    <div><label>Correo</label><input asp-for="Correo" type="email" /></div>
+    <div><label>Contraseña</label><input asp-for="PasswordHash" type="password" /></div>
+    <button type="submit">Guardar cambios</button>
+</form>
+
+<a asp-action="Index">Volver</a>

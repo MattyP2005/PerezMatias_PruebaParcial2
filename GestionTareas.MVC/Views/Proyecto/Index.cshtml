@@ -1,0 +1,22 @@
+﻿@model IEnumerable<GestionTareas.Modelos.Proyecto>
+
+<h2>Proyectos</h2>
+
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Fecha de creación</th>
+    </tr>
+    @foreach (var proyecto in Model)
+    {
+        <tr>
+            <td>@proyecto.Nombre</td>
+            <td>@proyecto.Descripcion</td>
+            <td>@proyecto.FechaCreacion.ToShortDateString()</td>
+        </tr>
+    }
+</table>
+
+<br />
+<a asp-controller="Home" asp-action="Index">Volver al Inicio</a>

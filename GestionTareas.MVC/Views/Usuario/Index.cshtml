@@ -1,0 +1,24 @@
+﻿@model IEnumerable<GestionTareas.Modelos.Usuario>
+
+<h2>Usuarios Registrados</h2>
+
+<a asp-action="Create">Registrar nuevo usuario</a>
+
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Acciones</th>
+    </tr>
+    @foreach (var usuario in Model)
+    {
+        <tr>
+            <td>@usuario.Nombre</td>
+            <td>@usuario.Correo</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@usuario.Id">Editar</a> |
+                <a asp-action="Delete" asp-route-id="@usuario.Id">Eliminar</a>
+            </td>
+        </tr>
+    }
+</table>

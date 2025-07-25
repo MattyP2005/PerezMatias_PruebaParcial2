@@ -1,51 +1,72 @@
-﻿using System.Net.Http.Json;
+﻿using System.Net.Http.Headers;
+using System.Net.Http.Json;
 using System.Text.Json;
 
 namespace GestionTareas.API.Consumer
 {
     public class Crud<T> where T : class
     {
-        private readonly HttpClient _http;
+        private readonly HttpClient _httpClient;
         private readonly string _baseUrl;
         private readonly string _endpoint;
         private readonly JsonSerializerOptions _jsonOptions = new() { PropertyNameCaseInsensitive = true };
 
         public Crud(HttpClient httpClient, string baseUrl, string endpoint)
         {
-            _http = httpClient;
+            _httpClient = httpClient;
             _baseUrl = baseUrl.TrimEnd('/');
             _endpoint = endpoint.Trim('/');
         }
 
-        public async Task<List<T>> ObtenerTodosAsync(string token)
+        // Método genérico para POST con DTOs o cualquier tipo
+        public async Task<TResponse?> PostAsync<TRequest, TResponse>(string relativeUrl, TRequest data)
         {
-            _http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-            var res = await _http.GetAsync($"{_baseUrl}/api/{_endpoint}");
-            res.EnsureSuccessStatusCode();
-            return await res.Content.ReadFromJsonAsync<List<T>>(_jsonOptions) ?? new List<T>();
+            var response = await _httpClient.PostAsJsonAsync($"{_baseUrl}/{relativeUrl}", data);
+            if (!response.IsSuccessStatusCode)
+                return default;
+            return await response.Content.ReadFromJsonAsync<TResponse>(_jsonOptions);
         }
 
-        public async Task<T?> ObtenerPorIdAsync(int id, string token)
+        private void SetAuthorization(string token)
         {
-            _http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-            var res = await _http.GetAsync($"{_baseUrl}/api/{_endpoint}/{id}");
-            return res.IsSuccessStatusCode ? await res.Content.ReadFromJsonAsync<T>(_jsonOptions) : null;
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
         }
 
-        public async Task<int?> CrearAsync(T entidad, string token)
+        public async Task<List<T>> GetAllAsync(string endpoint, string token)
         {
-            _http.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-            var res = await _http.PostAsJsonAsync($"{_baseUrl}/api/{_endpoint}", entidad);
-            if (!res.IsSuccessStatusCode) return null;
-
-            var json = await res.Content.ReadAsStringAsync();
-            using var doc = JsonDocument.Parse(json);
-            if (doc.RootElement.TryGetProperty("id", out var idProp))
-                return idProp.GetInt32();
-
-            return null;
+            SetAuthorization(token);
+            var response = await _httpClient.GetAsync(endpoint);
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<List<T>>(_jsonOptions) ?? new List<T>();
         }
 
+        public async Task<T?> GetByIdAsync(string endpoint, string token)
+        {
+            SetAuthorization(token);
+            var response = await _httpClient.GetAsync(endpoint);
+            if (!response.IsSuccessStatusCode) return null;
+            return await response.Content.ReadFromJsonAsync<T>(_jsonOptions);
+        }
 
+        public async Task<bool> PostAsync(string endpoint, T entidad, string token)
+        {
+            SetAuthorization(token);
+            var response = await _httpClient.PostAsJsonAsync(endpoint, entidad);
+            return response.IsSuccessStatusCode;
+        }
+
+        public async Task<bool> PutAsync(string endpoint, T entidad, string token)
+        {
+            SetAuthorization(token);
+            var response = await _httpClient.PutAsJsonAsync(endpoint, entidad);
+            return response.IsSuccessStatusCode;
+        }
+
+        public async Task<bool> DeleteAsync(string endpoint, string token)
+        {
+            SetAuthorization(token);
+            var response = await _httpClient.DeleteAsync(endpoint);
+            return response.IsSuccessStatusCode;
+        }
     }
 }

@@ -6,27 +6,15 @@ namespace GestionTareas.MVC.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
-            return View();
-        }
+            var token = HttpContext.Session.GetString("JWT");
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+            if (string.IsNullOrEmpty(token))
+                return RedirectToAction("Login", "Auth");
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            ViewBag.Token = token;
+            return View();
         }
     }
 }

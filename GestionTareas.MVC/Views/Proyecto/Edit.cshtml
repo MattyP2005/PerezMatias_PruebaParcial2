@@ -1,0 +1,22 @@
+﻿@model GestionTareas.Modelos.Proyecto
+
+<h2>Editar Proyecto</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div>
+        <label>Nombre</label>
+        <input asp-for="Nombre" />
+    </div>
+    <div>
+        <label>Descripción</label>
+        <textarea asp-for="Descripcion"></textarea>
+    </div>
+    <div>
+        <label>Fecha de Creación</label>
+        <input asp-for="FechaCreacion" type="date" />
+    </div>
+    <button type="submit">Guardar cambios</button>
+</form>
+
+<a asp-action="Index">Volver</a>
