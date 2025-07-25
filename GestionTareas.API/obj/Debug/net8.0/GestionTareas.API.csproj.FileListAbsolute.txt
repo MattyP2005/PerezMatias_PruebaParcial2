@@ -271,3 +271,4 @@ C:\Important\Universidad\3er Nivel\HERRAMIENTAS DE PROGRAMACION\MatiasPerez_Prue
 C:\Important\Universidad\3er Nivel\HERRAMIENTAS DE PROGRAMACION\MatiasPerez_Prueba2Parcial\GestionTareas.API\obj\Debug\net8.0\GestionTareas.API.genruntimeconfig.cache
 C:\Important\Universidad\3er Nivel\HERRAMIENTAS DE PROGRAMACION\MatiasPerez_Prueba2Parcial\GestionTareas.API\obj\Debug\net8.0\ref\GestionTareas.API.dll
 C:\Important\Universidad\3er Nivel\HERRAMIENTAS DE PROGRAMACION\MatiasPerez_Prueba2Parcial\GestionTareas.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Important\Universidad\3er Nivel\HERRAMIENTAS DE PROGRAMACION\MatiasPerez_Prueba2Parcial\GestionTareas.API\obj\Debug\net8.0\GestionTareas.API.sourcelink.json

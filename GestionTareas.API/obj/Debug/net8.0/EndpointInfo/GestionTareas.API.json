@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "GestionTareas.API",
-    "version": "1.0"
+    "version": "v1"
   },
   "paths": {
     "/api/GenerarJWT/registro": {
@@ -649,6 +649,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Ingrese su token JWT en este formato: Bearer {su token}",
+        "name": "Authorization",
+        "in": "header"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

@@ -3,25 +3,10 @@
   "WorkspaceRootPath": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.Modelos\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{787643BD-A476-48B7-8AD5-8A680BA7082A}|..\\GestionTareas.API\\GestionTareas.API.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api\\servicios\\interfaces\\idbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A597F6A5-EA2E-47DC-A8B7-40D3312B9325}|..\\GestionTareas.API.Consumer\\GestionTareas.API.Consumer.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api.consumer\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{787643BD-A476-48B7-8AD5-8A680BA7082A}|..\\GestionTareas.API\\GestionTareas.API.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{787643BD-A476-48B7-8AD5-8A680BA7082A}|..\\GestionTareas.API\\GestionTareas.API.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{787643BD-A476-48B7-8AD5-8A680BA7082A}|..\\GestionTareas.API\\GestionTareas.API.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api\\controllers\\proyectoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{787643BD-A476-48B7-8AD5-8A680BA7082A}|..\\GestionTareas.API\\GestionTareas.API.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{787643BD-A476-48B7-8AD5-8A680BA7082A}|..\\GestionTareas.API\\GestionTareas.API.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{787643BD-A476-48B7-8AD5-8A680BA7082A}|..\\GestionTareas.API\\GestionTareas.API.csproj|c:\\important\\universidad\\3er nivel\\herramientas de programacion\\matiasperez_prueba2parcial\\gestiontareas.api\\servicios\\dbconnectionfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,7 +16,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,93 +24,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\appsettings.json",
+              "RelativeDocumentMoniker": "..\\GestionTareas.API\\appsettings.json",
+              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\appsettings.json",
+              "RelativeToolTip": "..\\GestionTareas.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-25T15:44:22.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Crud.cs",
-              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API.Consumer\\Crud.cs",
-              "RelativeDocumentMoniker": "..\\GestionTareas.API.Consumer\\Crud.cs",
-              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API.Consumer\\Crud.cs",
-              "RelativeToolTip": "..\\GestionTareas.API.Consumer\\Crud.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:18:50.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "..\\GestionTareas.API\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "..\\GestionTareas.API\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA1wDAAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:14:36.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TareasController.cs",
-              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Controllers\\TareasController.cs",
-              "RelativeDocumentMoniker": "..\\GestionTareas.API\\Controllers\\TareasController.cs",
-              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Controllers\\TareasController.cs",
-              "RelativeToolTip": "..\\GestionTareas.API\\Controllers\\TareasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:13:03.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProyectosController.cs",
-              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Controllers\\ProyectosController.cs",
-              "RelativeDocumentMoniker": "..\\GestionTareas.API\\Controllers\\ProyectosController.cs",
-              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Controllers\\ProyectosController.cs",
-              "RelativeToolTip": "..\\GestionTareas.API\\Controllers\\ProyectosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T15:07:45.959Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Program.cs",
               "RelativeDocumentMoniker": "..\\GestionTareas.API\\Program.cs",
               "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Program.cs",
               "RelativeToolTip": "..\\GestionTareas.API\\Program.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwDYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCoAAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T13:47:11.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DbConnectionFactory.cs",
-              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Servicios\\DbConnectionFactory.cs",
-              "RelativeDocumentMoniker": "..\\GestionTareas.API\\Servicios\\DbConnectionFactory.cs",
-              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Servicios\\DbConnectionFactory.cs",
-              "RelativeToolTip": "..\\GestionTareas.API\\Servicios\\DbConnectionFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T13:40:46.319Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IDbConnectionFactory.cs",
-              "DocumentMoniker": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Servicios\\Interfaces\\IDbConnectionFactory.cs",
-              "RelativeDocumentMoniker": "..\\GestionTareas.API\\Servicios\\Interfaces\\IDbConnectionFactory.cs",
-              "ToolTip": "C:\\Important\\Universidad\\3er Nivel\\HERRAMIENTAS DE PROGRAMACION\\MatiasPerez_Prueba2Parcial\\GestionTareas.API\\Servicios\\Interfaces\\IDbConnectionFactory.cs",
-              "RelativeToolTip": "..\\GestionTareas.API\\Servicios\\Interfaces\\IDbConnectionFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T13:38:53.032Z",
               "EditorCaption": ""
             }
           ]
